@@ -81,7 +81,7 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 14px;
 }
 
 strong {
@@ -97,7 +97,7 @@ heading {
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700
+  font-weight: 700;
 }
 
 name {
@@ -124,6 +124,15 @@ name {
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
+}
+
+/* 非轮播图片样式：控制爱好、家乡板块的图片（核心修改处） */
+.hobby-item img,
+.hometown-item img {
+  width: 100%; /* 宽度自适应父容器，保持排版一致 */
+  height: 180px; /* 可修改此数值调整图片高度，如150px、200px */
+  object-fit: cover; /* 保持图片比例，避免拉伸变形 */
+  border-radius: 4px; /* 可选：添加圆角优化视觉 */
 }
 
 span.highlight {
